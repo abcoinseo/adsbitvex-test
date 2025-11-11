@@ -58,14 +58,16 @@
     .MainAdverTiseMentDiv {
       margin: 20px auto;
       text-align: center;
-      max-width: 100%;
       display: block;
+      max-width: 100%;
+      padding: 10px;
     }
 
     .MainAdverTiseMentDiv iframe {
       width: 100%;
-      max-width: 300px;
       height: auto;
+      max-width: 970px; /* Ensure it doesn't exceed 970px on large screens */
+      margin: 0 auto;
     }
 
     /* Footer */
@@ -98,12 +100,18 @@
         display: block;
         padding: 10px;
       }
+
+      .MainAdverTiseMentDiv iframe {
+        max-width: 320px; /* Mobile screen size adjustments */
+        width: 100%;
+      }
     }
 
     @media (min-width: 769px) {
       nav {
         display: block;
       }
+
       .menu-icon {
         display: none;
       }
